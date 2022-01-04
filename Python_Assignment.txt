@@ -1,0 +1,200 @@
+Set-A:
+1]Area of Triangle:
+Program:
+h=int(input("Enter Height:"))
+b=int(input("Enter Base:"))
+area=0.5*b*h
+print("Area of Triangle=",area)
+Output:
+Enter Height:6
+Enter Base:3
+Area of Triangle= 9.0
+
+2]Swap two variable:
+Program:
+a=int(input("Enter Number1:"))
+b=int(input("Enter Number2:"))
+temp=a
+a=b
+b=temp
+print("\nAfter Interchange:")
+print("a=",a)
+print("b=",b)
+Output:
+Enter Number1:5
+Enter Number2:10
+After Interchange:
+a= 10
+b= 5
+
+Set-B:
+1]Check Number Positive or Negative:
+Program:
+n=int(input("Enter Number:"))
+if(n>0):
+    print("Number is Positive")
+if(n<0):
+    print("Number is Negative")
+if(n==0):
+    print("Number is Zero")
+Output:
+Enter Number:5
+Number is Positive
+
+2]Check Number is even or odd:
+Program:
+n=int(input("Enter Number:"))
+if(n%2==0):
+    print("Number is Even")
+else:
+    print("Number is Odd")
+Output:
+Enter Number:23
+Number is Odd
+
+3]Check Number is Prime or not:
+Program:
+n=int(input("Enter Number:"))
+f=0
+for i in range(2,n):
+    if(n%i==0):
+        f=1
+if(f==0):
+    print("Number is Prime")
+if(f==1):
+    print("Number is Not Prime")
+Output:
+Enter Number:5
+Number is Prime
+
+4]Check Number is Armstrong or not:
+Program:
+n=int(input("Enter Number:"))
+temp=n
+sum=0
+while(n>0):
+    d=n%10
+    sum=sum+(d*d*d)
+    n=int(n/10)
+if(sum==temp):
+    print("Number is Armstrong")
+else:
+    print("Number is not Armstrong")
+Output:
+Enter Number:153
+Number is Armstrong
+
+5]Find Factorial:
+Program:
+n=int(input("Enter Number:"))
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+print("Factorial=",fact)
+Output:
+Enter Number:5
+Factorial= 120
+
+Program for Practice:
+1]Convert kilometer to mile:
+Program:
+km=int(input("Enter kilometer:"))
+mile=km*0.62137
+print("miles=",mile)
+Output:
+Enter kilometer:2
+miles= 1.24274
+
+2]Convert Celsius to Fahrenheit:
+Program:
+c=int(input("Enter Celsius:"))
+f=(c+(9/5))+32
+print("Fahrenheit=",f)
+Output:
+Enter Celsius:35
+Fahrenheit= 68.8
+
+3]Check year is leap or not:
+Program:
+year=int(input("Enter year:"))
+if(year%4==0):
+    print("year is leap")
+else:
+    print("year is not leap")
+Output:
+Enter year:2016
+year is leap
+
+4]Print all an prime number in an interval:
+Program:
+n1=int(input("Enter Number1:"))
+n2=int(input("Enter Number2:"))
+for i in range(n1,n2):
+    f=0
+    for j in range(2,i):
+        if(i%j==0):
+            f=1
+            break
+    if(f==0):
+        print(i)
+Output:
+Enter Number1:1
+Enter Number2:20
+1
+2
+3
+5
+7
+11
+13
+17
+19
+
+6]Print the fibonacci sequence:
+Program:
+int(input("Enter Number:"))
+f=0
+s=1
+print("Fibonacci Sequence=",f,s,end=" ")
+for i in range(1,n+1):
+    t=f+s
+    print(t,end=" ")
+    f=s
+    s=t
+Output:
+Enter Number:10
+Fibonacci Sequence= 0 1 1 2 3 5 8 13 21 34 55 89 
+
+6]Find Armstrong number is an interval:
+Program:
+a=int(input("Enter Number1:"))
+b=int(input("Enter Number2:"))
+for i in range(a,b):
+    n=i
+    sum=0
+    while(i>0):
+        d=i%10
+        sum=sum+(d*d*d)
+        i=int(i/10)
+    if(sum==n):
+        print(n)
+Output:
+Enter Number1:100
+Enter Number2:1000
+153
+370
+371
+407
+
+7]Find sum of natural number:
+Program:
+n=int(input("Enter Limit:"))
+s=0
+for i in range(1,n+1):
+    s=s+i
+print("Sum of Natural Number=",s)
+Output:
+Enter Limit:10
+Sum of Natural Number= 55
+
+				
